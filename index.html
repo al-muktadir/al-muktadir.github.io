@@ -1,29 +1,675 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Al Muktadir Munam - Academic Portfolio | Epidemiology & Health Research</title>
-    <meta name="description" content="Academic portfolio of Al Muktadir Munam - Graduate Student in Epidemiology and Applied Health Research at Dalhousie University. Specialized in psychiatric epidemiology, machine learning in health research, and digital health interventions.">
-    <meta name="keywords" content="epidemiology, machine learning, public health, research, academic portfolio, psychiatric epidemiology, digital health, Dalhousie University">
-    <meta name="author" content="Al Muktadir Munam">
-    
-    <!-- Open Graph tags -->
-    <meta property="og:title" content="Al Muktadir Munam - Academic Portfolio">
-    <meta property="og:description" content="Graduate Student in Epidemiology and Applied Health Research at Dalhousie University">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/index-Dkf5nQvX.js"></script>
-    <link rel="stylesheet" crossorigin href="/index-W1QemjFs.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Muktadir Munam - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-brand">Al Muktadir Munam</h1>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#awards" class="nav-link">Awards</a></li>
+                <li><a href="#blog" class="nav-link">Blog & Gallery</a></li>
+                <li><a href="#personal" class="nav-link">Personal</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">Al Muktadir Munam</h1>
+                    <p class="hero-subtitle">Graduate Student in Epidemiology and Applied Health Research</p>
+                    <p class="hero-description">
+                        Passionate researcher at the intersection of psychiatric epidemiology and machine learning, 
+                        currently pursuing M.Sc. at Dalhousie University. Focused on developing innovative approaches 
+                        to predict health outcomes using statistical and machine learning models.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="mailto:muktadir.munam@dal.ca" class="btn btn-primary">Contact Me</a>
+                        <button class="btn btn-secondary" onclick="downloadCV()">Download CV</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">👤</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Bar Section -->
+    <section class="contact-bar">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <span class="icon">✉️</span>
+                    <a href="mailto:muktadir.munam@dal.ca">muktadir.munam@dal.ca</a>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">💼</span>
+                    <a href="https://www.linkedin.com/in/al-muktadir-munam/" target="_blank">LinkedIn Profile</a>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📚</span>
+                    <a href="https://scholar.google.com/citations?user=K7U1hsEAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <!-- MSc -->
+                <div class="timeline-item">
+                    <div class="timeline-dot current"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Master of Science (M.Sc.) in Epidemiology and Applied Health Research</h3>
+                            <span class="badge current">2026 (Expected)</span>
+                        </div>
+                        <p class="institution">Dalhousie University, Nova Scotia, Canada</p>
+                        <ul class="details-list">
+                            <li>Working on projects focused on the intersection of psychiatric epidemiology and machine learning</li>
+                            <li>Thesis: Development and validation of Statistical and Machine Learning Models for Predicting 1-Month and 12-Month Psychiatric Hospitalization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- MPH -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Master of Public Health (MPH)</h3>
+                            <span class="badge">2023</span>
+                        </div>
+                        <p class="institution">Varendra University, Rajshahi, Bangladesh</p>
+                        <p class="gpa"><strong>CGPA: 3.95/4.00 (79.53%)</strong></p>
+                        <ul class="details-list">
+                            <li>Gained in-depth knowledge of public health principles, research methods, and health policy</li>
+                            <li>Thesis: "Comorbidity and Factors Influencing Bipolar Disorder Among Female University Students in Bangladesh"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- BSc -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Bachelor of Science (B.Sc.) in Computer Science and Engineering</h3>
+                            <span class="badge">2022</span>
+                        </div>
+                        <p class="institution">Varendra University, Rajshahi, Bangladesh</p>
+                        <p class="gpa"><strong>CGPA: 4.00/4.00 (91.78%) - Top rank in the program</strong></p>
+                        <ul class="details-list">
+                            <li>Strong foundation in programming languages, AI, and machine learning applications</li>
+                            <li>Thesis: "Prevalence of Diabetes Mellitus and Hypertension among the Adult Population in Bangladesh during the COVID-19 Pandemic"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests Section -->
+    <section id="research" class="section research-section">
+        <div class="container">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">🔬</div>
+                    <h3 class="research-title">Psychiatric Epidemiology</h3>
+                    <p class="research-description">Investigating patterns, causes, and effects of mental health and psychiatric disorders in defined populations.</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">🤖</div>
+                    <h3 class="research-title">Machine Learning in Health Research</h3>
+                    <p class="research-description">Applying advanced computational methods to predict health outcomes and improve healthcare delivery.</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">💻</div>
+                    <h3 class="research-title">Digital Health Interventions</h3>
+                    <p class="research-description">Developing and evaluating technology-based solutions for health promotion and disease prevention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            
+            <h3 class="subsection-title">Current Positions</h3>
+            <div class="timeline">
+                <!-- Teaching Assistant -->
+                <div class="timeline-item">
+                    <div class="timeline-dot current"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Teaching Assistant</h3>
+                            <span class="badge current">Sep. 2025 – Present</span>
+                        </div>
+                        <p class="organization">College of Pharmacy, Dalhousie University</p>
+                        <ul class="details-list">
+                            <li>Facilitate weekly small-group problem-based learning sessions for first-year pharmacy students</li>
+                            <li>Guide students through case-based discussions to strengthen critical thinking and problem-solving</li>
+                            <li>Collaborate with course faculty to align tutoring sessions with learning objectives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Outreach Assistant -->
+                <div class="timeline-item">
+                    <div class="timeline-dot current"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Outreach Assistant</h3>
+                            <span class="badge current">Sep. 2025 – Present</span>
+                        </div>
+                        <p class="organization">Office of Community Engagement, Dalhousie University</p>
+                        <ul class="details-list">
+                            <li>Manage Office communications by creating and scheduling social media content</li>
+                            <li>Represent the office at conferences and local events, building connections with community partners</li>
+                            <li>Support planning and delivery of outreach initiatives including student competitions and events</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Lecturer -->
+                <div class="timeline-item">
+                    <div class="timeline-dot current"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Lecturer (Study Leave)</h3>
+                            <span class="badge current">Feb. 2022 – Present</span>
+                        </div>
+                        <p class="organization">Dept. of Computer Science and Engineering, Varendra University</p>
+                        <ul class="details-list">
+                            <li>Developed and delivered comprehensive lectures on Computer Architecture, AI, and Parallel Processing</li>
+                            <li>Mentored over 600 undergraduate students and supervised 9 final-year thesis projects</li>
+                            <li>Participated in curriculum development and departmental activities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection-title-with-toggle">
+                <h3 class="subsection-title">Previous Positions</h3>
+                <button class="toggle-btn" onclick="togglePreviousExperience()">
+                    <span id="toggleIcon">▼</span> Show All
+                </button>
+            </div>
+            <div class="timeline" id="previousExperienceContainer" style="display: none;">
+                <!-- PHAC -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Student Public Health Officer</h3>
+                            <span class="badge">Feb. 2025 – Jun. 2025</span>
+                        </div>
+                        <p class="organization">Public Health Agency of Canada</p>
+                        <ul class="details-list">
+                            <li>Worked with the Public Health Surveillance team on a 16-week wastewater surveillance project</li>
+                            <li>Integrated wastewater SARS-CoV-2 RNA data with clinical indicators to assess correlations</li>
+                            <li>Evaluated potential as early signals of infection trends, supporting timely public health decision-making</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Research Assistant -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Research Assistant</h3>
+                            <span class="badge">Sep. 2023 – Feb. 2025</span>
+                        </div>
+                        <p class="organization">Health Data Science Lab, Dalhousie University</p>
+                        <ul class="details-list">
+                            <li>Manage and analyze large datasets for digital phenotyping project predicting symptoms and functional outcomes</li>
+                            <li>Lead development of action plans, work manuals, and automated text messaging systems</li>
+                            <li>Ensure seamless data storage and integration of digital health data for efficient analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Navy -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Officer Cadet</h3>
+                            <span class="badge">Jul. 2017 – Jan. 2018</span>
+                        </div>
+                        <p class="organization">Bangladesh Navy (Batch 17/B)</p>
+                        <ul class="details-list">
+                            <li>Successfully completed the 67th Joint Service Training, enhancing capabilities in strategic planning</li>
+                            <li>Developed critical decision-making skills under pressure</li>
+                            <li>Acquired discipline, resilience, and strong leadership qualities through rigorous military training</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Career Club -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Facilitator</h3>
+                            <span class="badge">Oct. 2021 – Dec. 2021</span>
+                        </div>
+                        <p class="organization">Varendra University Career Club</p>
+                        <ul class="details-list">
+                            <li>Facilitated 12 youth leadership training sessions, empowering 20 participants</li>
+                            <li>Developed and implemented training materials and conducted interactive workshops</li>
+                            <li>Contributed to achieving SDG 16 by fostering critical thinking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mentor's Education -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Instructor (Quant and Analytical Skills)</h3>
+                            <span class="badge">May 2018 – Feb. 2022</span>
+                        </div>
+                        <p class="organization">Mentors' Education</p>
+                        <ul class="details-list">
+                            <li>Developed and delivered comprehensive lectures on mathematical concepts for competitive exams</li>
+                            <li>Prepared instructional materials to enhance student understanding of quantitative topics</li>
+                            <li>Managed course logistics and facilitated student interactions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section publications-section">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            
+            <!-- Book Chapter -->
+            <div class="pub-category">
+                <div class="pub-category-header">
+                    <span class="pub-icon-large">📖</span>
+                    <h3 class="pub-category-title">Book Chapter</h3>
+                </div>
+                <div class="pub-item">
+                    <div class="pub-icon">📕</div>
+                    <div class="pub-content">
+                        <p class="pub-authors">Sumaia Rahman, Ahammad Hossain, <strong>Al Muktadir Munam</strong>, Ayesha Akter Lima, Rejvi Ahmed Bhuiya, Jayanta Das, Md Kamruzzaman. (2025).</p>
+                        <p class="pub-title">Mental Health of Pregnant Women in Bangladesh During the COVID-19 Pandemic: A Cross-Sectional Study</p>
+                        <p class="pub-journal"><em>Sexual and Reproductive Health of Women: Dimensions and Perspectives (p.207-241), Springer Nature Singapore.</em></p>
+                        <a href="https://doi.org/10.1007/978-981-97-8418-9_14" target="_blank" class="pub-link">🔗 DOI: 10.1007/978-981-97-8418-9_14</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Journal Papers -->
+            <div class="pub-category">
+                <div class="pub-category-header">
+                    <span class="pub-icon-large">📄</span>
+                    <h3 class="pub-category-title">Journal Publications</h3>
+                </div>
+                
+                <div class="pub-item">
+                    <div class="pub-icon">📊</div>
+                    <div class="pub-content">
+                        <p class="pub-authors"><strong>Al Muktadir Munam</strong>, Ahammad Hossain. (2025).</p>
+                        <p class="pub-title">Prevalence of Diabetes Mellitus and Hypertension Among COVID‐19 Patients: A Cross‐Sectional Study</p>
+                        <p class="pub-journal"><em>Health Science Reports, 8(8).</em></p>
+                        <a href="https://doi.org/10.1002/hsr2.71183" target="_blank" class="pub-link">🔗 DOI: 10.1002/hsr2.71183</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-icon">📊</div>
+                    <div class="pub-content">
+                        <p class="pub-authors"><strong>Al Muktadir Munam</strong>, Ahammad Hossain. (2024).</p>
+                        <p class="pub-title">Factors Influencing Mental Health Among Youth During the COVID-19 Lockdown: A Cross-Sectional Study in Bangladesh</p>
+                        <p class="pub-journal"><em>IEEE Transactions on Computational Social Systems, 1–10.</em></p>
+                        <a href="https://doi.org/10.1109/TCSS.2024.3350087" target="_blank" class="pub-link">🔗 DOI: 10.1109/TCSS.2024.3350087</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-icon">📊</div>
+                    <div class="pub-content">
+                        <p class="pub-authors">Ahammad Hossain, <strong>Al Muktadir Munam</strong>, Rejvi Ahmed Bhuiya, Md. Ruhul Amin, Mohammad Zulficar Ali. (2023).</p>
+                        <p class="pub-title">Socio-Demographic Factors Influencing Physical Health Among Youth During the COVID-19 Pandemic in Bangladesh</p>
+                        <p class="pub-journal"><em>SN Social Sciences, 3(7), 115.</em></p>
+                        <a href="https://doi.org/10.1007/s43545-023-00700-z" target="_blank" class="pub-link">🔗 DOI: 10.1007/s43545-023-00700-z</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-icon">📊</div>
+                    <div class="pub-content">
+                        <p class="pub-authors">Sumaia Rahman, <strong>Al Muktadir Munam</strong>, Ahammad Hossain, ASM Delwar Hossain, Rejvi Ahmed Bhuiya (2023).</p>
+                        <p class="pub-title">Socio-Economic Factors Affecting the Academic Performance of Private University Students in Bangladesh</p>
+                        <p class="pub-journal"><em>SN Social Sciences, 3(2), 26.</em></p>
+                        <a href="https://doi.org/10.1007/s43545-023-00614-w" target="_blank" class="pub-link">🔗 DOI: 10.1007/s43545-023-00614-w</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-icon">📊</div>
+                    <div class="pub-content">
+                        <p class="pub-authors"><strong>Al Muktadir Munam</strong>, Ahammad Hossain, Rejvi Ahmed Bhuiya, Mohammad Zulficar Ali. (2023).</p>
+                        <p class="pub-title">Prevalence of Diabetes in the Adult Population in Bangladesh during the COVID-19 Pandemic</p>
+                        <p class="pub-journal"><em>Fortune Journal of Health Sciences, 6(1), 8–17.</em></p>
+                        <a href="https://doi.org/10.26502/fjhs.093" target="_blank" class="pub-link">🔗 DOI: 10.26502/fjhs.093</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-icon">📊</div>
+                    <div class="pub-content">
+                        <p class="pub-authors">Ahammad Hossain, <strong>Al Muktadir Munam</strong>, Mohammad Zulficar Ali. (2022).</p>
+                        <p class="pub-title">A Mini Review on The Factors Impacting Mental Health of Youth During the COVID-19 Lockdown</p>
+                        <p class="pub-journal"><em>Psychology and Behavioral Science International Journal, 17(2), 1–3.</em></p>
+                        <a href="https://doi.org/10.19080/PBSIJ.2022.18.555994" target="_blank" class="pub-link">🔗 DOI: 10.19080/PBSIJ.2022.18.555994</a>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-icon">📊</div>
+                    <div class="pub-content">
+                        <p class="pub-authors"><strong>Al Muktadir Munam</strong>, Ahammad Hossain. (2022).</p>
+                        <p class="pub-title">Factors Influencing Facebook Addiction Among Varendra University Students in The Lockdown During the COVID-19 Outbreak</p>
+                        <p class="pub-journal"><em>Computers in Human Behavior Reports, 6, 100181.</em></p>
+                        <a href="https://doi.org/10.1016/j.chbr.2022.100181" target="_blank" class="pub-link">🔗 DOI: 10.1016/j.chbr.2022.100181</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Papers Under Review -->
+            <div class="pub-category">
+                <div class="pub-category-header">
+                    <span class="pub-icon-large">🔄</span>
+                    <h3 class="pub-category-title">Papers Under Review</h3>
+                </div>
+                <div class="pub-item">
+                    <div class="pub-icon">⏳</div>
+                    <div class="pub-content">
+                        <p class="pub-authors">Al Muktadir Munam, Mst Fahmida Akter. (2025).</p>
+                        <p class="pub-title">Parent Daughter Relationship Quality and Depression among Unmarried Adolescent Girls in Bangladesh</p>
+                        <p class="pub-journal"><em>Discover Psychology (revision submitted)</em></p>
+                    </div>
+                </div>
+                <div class="pub-item">
+                    <div class="pub-icon">⏳</div>
+                    <div class="pub-content">
+                        <p class="pub-authors">Al Muktadir Munam. (2025).</p>
+                        <p class="pub-title">A Patient-Centered 5D Framework for Evaluating AI Early-Warning Systems in Mental Health</p>
+                        <p class="pub-journal"><em>In Silico Research in Biomedicine (revision submitted)</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="section awards-section">
+        <div class="container">
+            <h2 class="section-title">Awards & Recognition</h2>
+            
+            <div class="awards-grid">
+                <!-- Main Awards -->
+                <div class="awards-category">
+                    <h3 class="awards-cat-title">🏆 Awards & Contests</h3>
+                    
+                    <div class="award-item">
+                        <div class="award-year">2024</div>
+                        <div class="award-content">
+                            <h4 class="award-title">Best Imagery</h4>
+                            <p class="award-org">2024 Student Writing Competition, Global Health Office, Dalhousie University</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-year">2019</div>
+                        <div class="award-content">
+                            <h4 class="award-title">Runner Up, Idea Contest</h4>
+                            <p class="award-org">TECHFEST-2019, Varendra University</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-year">2018</div>
+                        <div class="award-content">
+                            <h4 class="award-title">Champion, Math Olympiad</h4>
+                            <p class="award-org">Varendra University Programming Club Geeks Contest</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-year">2018</div>
+                        <div class="award-content">
+                            <h4 class="award-title">14th Position, Regional Level</h4>
+                            <p class="award-org">13th Bangladesh Astro-Olympiad</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-year">2016</div>
+                        <div class="award-content">
+                            <h4 class="award-title">1st Position</h4>
+                            <p class="award-org">Mentor's Achievement Certificate - Spoken English Course</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-year">2016</div>
+                        <div class="award-content">
+                            <h4 class="award-title">Top 5</h4>
+                            <p class="award-org">Rajshahi College Annual Exam Awards</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-year">2014</div>
+                        <div class="award-content">
+                            <h4 class="award-title">Mayor Education Awards</h4>
+                            <p class="award-org">Outstanding result in SSC, Rajshahi City Corporation</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-year">2012</div>
+                        <div class="award-content">
+                            <h4 class="award-title">Mayor Education Awards</h4>
+                            <p class="award-org">Outstanding result in JSC, Rajshahi City Corporation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scholarships -->
+                <div class="awards-category">
+                    <h3 class="awards-cat-title">🎓 Scholarships</h3>
+                    
+                    <div class="award-item">
+                        <div class="award-year">2024</div>
+                        <div class="award-content">
+                            <h4 class="award-title">Dalhousie OpenThink Initiative</h4>
+                            <p class="award-org">Faculty of Graduate Studies | CDN$ 1,500</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-year">2018-2022</div>
+                        <div class="award-content">
+                            <h4 class="award-title">Undergraduate Academic Excellence Scholarship</h4>
+                            <p class="award-org">Full tuition fee waiver | CDN$ 6,600</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-year">2017-2021</div>
+                        <div class="award-content">
+                            <h4 class="award-title">HSC Board Stipend (29th Position)</h4>
+                            <p class="award-org">Rajshahi Education Board, Bangladesh | CDN$ 750</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-year">2015-2016</div>
+                        <div class="award-content">
+                            <h4 class="award-title">SSC Board Stipend (3rd Position)</h4>
+                            <p class="award-org">Rajshahi Education Board, Bangladesh | CDN$ 300</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-year">2013-2014</div>
+                        <div class="award-content">
+                            <h4 class="award-title">JSC Board Stipend (2nd Position)</h4>
+                            <p class="award-org">Rajshahi Education Board, Bangladesh | CDN$ 200</p>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-year">2009-2008</div>
+                        <div class="award-content">
+                            <h4 class="award-title">Multiple Scholarships</h4>
+                            <p class="award-org">Srishty Foundation & Shoharbanu Trust (Grades 3-6)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog & Gallery Section -->
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <h2 class="section-title">Blog & Gallery</h2>
+            <p class="section-subtitle">Research insights, reflections, and visual moments from my academic journey</p>
+            
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">📸</div>
+                    <h3 class="blog-title">Global Health Perspectives</h3>
+                    <p class="blog-excerpt">Exploring the intersection of psychiatric epidemiology and global mental health initiatives across different healthcare systems.</p>
+                    <a href="#" class="blog-link">Read More →</a>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">🔬</div>
+                    <h3 class="blog-title">Machine Learning in Healthcare</h3>
+                    <p class="blog-excerpt">Latest developments in using AI and machine learning to predict health outcomes and personalize treatment approaches.</p>
+                    <a href="#" class="blog-link">Read More →</a>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">📊</div>
+                    <h3 class="blog-title">COVID-19 Research Findings</h3>
+                    <p class="blog-excerpt">Data-driven insights from our longitudinal studies on pandemic impacts on mental and physical health in Bangladesh.</p>
+                    <a href="#" class="blog-link">Read More →</a>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">🌍</div>
+                    <h3 class="blog-title">International Conference Highlights</h3>
+                    <p class="blog-excerpt">Key takeaways from the Canadian Conference on Global Health and collaboration with international research teams.</p>
+                    <a href="#" class="blog-link">Read More →</a>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">💡</div>
+                    <h3 class="blog-title">Innovation in Public Health</h3>
+                    <p class="blog-excerpt">Wastewater surveillance as an early warning system - novel approaches to monitoring public health threats.</p>
+                    <a href="#" class="blog-link">Read More →</a>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">🎓</div>
+                    <h3 class="blog-title">Academic Journey</h3>
+                    <p class="blog-excerpt">Reflections on transitioning from computer science to public health and the power of interdisciplinary research.</p>
+                    <a href="#" class="blog-link">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Section -->
+    <section id="personal" class="section">
+        <div class="container">
+            <h2 class="section-title">Personal</h2>
+            <div class="personal-grid">
+                <div class="personal-card">
+                    <h3>Skills & Interests</h3>
+                    <ul>
+                        <li>Data Analysis & Statistical Modeling</li>
+                        <li>Machine Learning & AI</li>
+                        <li>Public Health Research</li>
+                        <li>Python, R, SQL</li>
+                        <li>Academic Writing & Publishing</li>
+                    </ul>
+                </div>
+                <div class="personal-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>English (Professional)</li>
+                        <li>Bengali (Native)</li>
+                    </ul>
+                </div>
+                <div class="personal-card">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Reading Research Papers</li>
+                        <li>Music & Podcasts</li>
+                        <li>Travel</li>
+                        <li>Contributing to Open Science</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always interested in hearing about new projects and opportunities for collaboration.</p>
+                <div class="contact-links">
+                    <a href="mailto:muktadir.munam@dal.ca" class="btn btn-primary">Send Email</a>
+                    <a href="https://www.linkedin.com/in/al-muktadir-munam/" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=K7U1hsEAAAAJ&hl=en" target="_blank" class="btn btn-secondary">Google Scholar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Al Muktadir Munam. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
 </html>
